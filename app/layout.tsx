@@ -1,4 +1,4 @@
-import { Figtree } from 'next/font/google'
+//import { Figtree } from 'next/font/google'
 
 import getSongsByUserId from '@/actions/getSongsByUserId'
 import Sidebar from '@/components/Sidebar'
@@ -10,7 +10,7 @@ import Player from '@/components/Player'
 
 import './globals.css'
 
-const font = Figtree({ subsets: ['latin'] })
+//const font = Figtree({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Spotify Clone',
@@ -28,8 +28,8 @@ export default async function RootLayout({
   const userSongs = await getSongsByUserId();
 
   return (
-    <html lang="en">
-      <body className={font.className}>
+    <html lang="fa-IR">
+      <body /* className={font.className} */>
         <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>

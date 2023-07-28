@@ -8,4 +8,27 @@ body,
   height: 100%;
   background-color: black;
   color-scheme: dark;
+  font-family: IRANSansWeb;
+  font-weight: 300;
+  direction: rtl;
+}
+
+
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url('../public/fonts/eot/IRANSansWeb(FaNum).eot');
+  src: url('../public/fonts/eot/IRANSansWeb(FaNum).eot') format('embedded-opentype'),
+       url('../public/fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),
+       url('../public/fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+  font-display: block;
+       
+}
+@font-face {
+  font-family: 'IRANSansWebBold';
+  src: url('../public/fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+  src: url('../public/fonts/eot/IRANSansWeb(FaNum)_Bold.eot') format('embedded-opentype'),
+       url('../public/fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+       url('../public/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+  font-display: block;
+       
 }

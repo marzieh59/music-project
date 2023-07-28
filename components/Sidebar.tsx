@@ -25,13 +25,13 @@ const Sidebar = ({ children, songs }: SidebarProps) => {
   const routes = useMemo(() => [
     {
       icon: HiHome,
-      label: 'Home',
+      label: 'خانه',
       active: pathname !== '/search',
       href: '/'
     },
     {
       icon: BiSearch,
-      label: 'Search',
+      label: 'جستجو',
       href: '/search',
       active: pathname === '/search'
     },

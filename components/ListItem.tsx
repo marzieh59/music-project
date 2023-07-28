@@ -45,7 +45,6 @@ const ListItem: React.FC<ListItemProps> = ({
         cursor-pointer 
         hover:bg-neutral-100/20 
         transition 
-        pr-4
       "
     >
       <div className="relative min-h-[64px] min-w-[64px]">
@@ -71,7 +70,7 @@ const ListItem: React.FC<ListItemProps> = ({
           bg-green-500 
           p-4 
           drop-shadow-md 
-          right-5
+          left-5
           group-hover:opacity-100 
           hover:scale-110
         "

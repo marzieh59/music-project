@@ -53,6 +53,21 @@ const Header: React.FC<HeaderProps> = ({
       )}>
       <div className="w-full mb-4 flex items-center justify-between">
         <div className="hidden md:flex gap-x-2 items-center">
+        <button 
+            onClick={() => router.forward()} 
+            className="
+              rounded-full 
+              bg-black 
+              flex 
+              items-center 
+              justify-center 
+              cursor-pointer 
+              hover:opacity-75 
+              transition
+            "
+          >
+            <RxCaretRight className="text-white" size={35} />
+          </button>
           <button 
             onClick={() => router.back()} 
             className="
@@ -68,21 +83,7 @@ const Header: React.FC<HeaderProps> = ({
           >
             <RxCaretLeft className="text-white" size={35} />
           </button>
-          <button 
-            onClick={() => router.forward()} 
-            className="
-              rounded-full 
-              bg-black 
-              flex 
-              items-center 
-              justify-center 
-              cursor-pointer 
-              hover:opacity-75 
-              transition
-            "
-          >
-            <RxCaretRight className="text-white" size={35} />
-          </button>
+          
         </div>
         <div className="flex md:hidden gap-x-2 items-center">
           <button 
@@ -125,7 +126,7 @@ const Header: React.FC<HeaderProps> = ({
                 onClick={handleLogout} 
                 className="bg-white px-6 py-2"
               >
-                Logout
+                خروج
               </Button>
               <Button 
                 onClick={() => router.push('/account')} 
@@ -136,7 +137,7 @@ const Header: React.FC<HeaderProps> = ({
             </div>
           ) : (
             <>
-              <div>
+              {/* <div>
                 <Button 
                   onClick={authModal.onOpen} 
                   className="
@@ -145,15 +146,15 @@ const Header: React.FC<HeaderProps> = ({
                     font-medium
                   "
                 >
-                  Sign up
+                  ثبت نام
                 </Button>
-              </div>
+              </div> */}
               <div>
                 <Button 
                   onClick={authModal.onOpen} 
                   className="bg-white px-6 py-2"
                 >
-                  Log in
+                  ورود/ثبت نام
                 </Button>
               </div>
             </>
