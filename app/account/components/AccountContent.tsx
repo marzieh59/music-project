@@ -10,7 +10,7 @@ import Button from "@/components/Button";
 const AccountContent = () => {
   const router = useRouter();
  
-  const { isLoading, subscription, user } = useUser();
+  const { isLoading, user } = useUser();
 
   const [loading, setLoading] = useState(false);
 
@@ -24,23 +24,10 @@ const AccountContent = () => {
 
   return ( 
     <div className="mb-7 px-6">
-      {!subscription && (
+      
+     
         <div className="flex flex-col gap-y-4">
-        <p>No active plan.</p>
-        <Button 
-          //onClick={subscribeModal.onOpen}
-          className="w-[300px]"
-        >
-          Subscribe
-        </Button>
-      </div>
-      )}
-      {subscription && (
-        <div className="flex flex-col gap-y-4">
-          <p>You are currently on the 
-            <b> {subscription?.prices?.products?.name} </b> 
-            plan.
-          </p>
+         
           <Button
             disabled={loading || isLoading}
             //onClick={redirectToCustomerPortal}
@@ -49,7 +36,7 @@ const AccountContent = () => {
             Open customer portal
           </Button>
         </div>
-      )}
+      
     </div>
   );
 }
